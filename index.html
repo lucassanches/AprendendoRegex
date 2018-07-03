@@ -62,29 +62,55 @@
         <p>
             <h3>Classes de char</h3>
             <ul>
-                <li>\d - qualquer numero</li>
-                <li>\s - whitespace qualquer inclui espaço, tab, enter</li>
-                <li>\w - caracter ou número</li>
-                <li>[A-Z] significa de A até Z, sempre maiúscula.</li>
-                <li>[a-z] significa de a até z, sempre minúscula.</li>
-                <li>[A-Za-z] significa A-Z ou a-z.</li>
-                <li>[abc] significa a, b ou c.</li>  
+                <li>\d - qualquer numero;</li>
+                <li>\s - whitespace qualquer inclui espaço, tab, enter;</li>
+                <li>\w - word char, caracteres e números;</li>
+                <li>^ - Negação</li>                
+                <li>[A-Z] significa de A até Z, sempre maiúscula;</li>
+                <li>[a-z] significa de a até z, sempre minúscula;</li>
+                <li>[A-Za-z] significa A-Z ou a-z;</li>
+                <li>[abc] significa a, b ou c;</li>  
             </ul>
+        </p>
+
+        <p>
+            <h3>Âncoras</h3>
+            <ul>
+                <li>\b - word boundary, limites da expressão regular sem um word char;</li>
+                <li>\B - Non-word-boundary</li>
+                <li>^ - No inicio da expressão regular;</li>
+                <li>$ - No fim da expressão regular;</li>
+            </ul>
+        </p>
+
+        <p>
+            <h3>Grupos</h3>
+            <ul>
+                <li>() - Capturing group</li>
+                <li>(?) - Non-capturing group</li>
+            </ul>
+        
         </p>
       
         <p>
             <h3>Quantidade de char</h3>
             <ul>
-                <li>? - zero ou uma vez.</li>
-                <li>* - zero ou mais vezes.</li>
-                <li>+ - uma ou mais vezes.</li>
-                <li>{n} - exatamente n vezes.</li>
-                <li>{n,} - no mínimo n vezes.</li>
-                <li>{n,m} - no mínimo n vezes, no máximo m vezes.</li>             
+                <li>? - zero ou uma vez;</li>
+                <li>* - zero ou mais vezes;</li>
+                <li>+ - uma ou mais vezes;</li>
+                <li>{n} - exatamente n vezes;</li>
+                <li>{n,} - no mínimo n vezes;</li>
+                <li>{n,m} - no mínimo n vezes, no máximo m vezes;</li>             
             </ul>
 
 
 
+        </p>
+
+        <h2>Comuns</h2>
+        <p>
+            <li>[A-Z][a-zç]{3,8} - Mês</li>
+            <li>[1-3]?\d - Dia</li>           
         </p>
   
       </div>
